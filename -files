@@ -1,0 +1,17 @@
+[33mcommit d252b1aa16696a546dea029208ed34d8e2b0f418[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: avikamane <avika.mane.cc@gmail.com>
+Date:   Sat Jun 27 21:12:35 2026 +0530
+
+    Remove large exe file
+
+ Antigravity IDE.exe | Bin [31m223534712[m -> [32m0[m bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit 90f5cbeb57566964774fa7ae5e99fabe10fd16d9[m
+Author: avikamane <avika.mane.cc@gmail.com>
+Date:   Sat Jun 27 21:03:15 2026 +0530
+
+    first commit
+
+ Antigravity IDE.exe | Bin [31m0[m -> [32m223534712[m bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)

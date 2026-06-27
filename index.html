@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AERO - Dynamic Motion Experience</title>
+  <meta name="description"
+    content="Explore state-of-the-art product motion and interaction with smooth scroll-triggered sequence animation.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="loader-container">
+      <div class="loader-spinner">
+        <div class="loader-circle"></div>
+        <div class="loader-circle-inner"></div>
+      </div>
+      <div class="loader-text">Loading Experience</div>
+      <div class="loader-percentage">0%</div>
+    </div>
+  </div>
+
+  <!-- Glassmorphic Navigation -->
+  <header class="navbar">
+    <a href="#" class="nav-logo">
+      <div class="logo-dot"></div>
+      AERO
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hero">Overview</a></li>
+      <li><a href="#animation-section">Design</a></li>
+      <li><a href="#features">Specs</a></li>
+    </ul>
+    <a href="#cta" class="nav-cta">Order Now</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <div class="hero-tagline">Crafted for Motion</div>
+      <h1 class="hero-title">Engineering The Future</h1>
+      <p class="hero-desc">Discover the synthesis of form, function, and fluid kinetic design. Scroll to uncover the
+        mechanics of premium rotation.</p>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll down</span>
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll Triggered Animation Section -->
+  <section id="animation-section" class="scroll-container">
+    <div class="sticky-wrapper">
+      <canvas id="animation-canvas"></canvas>
+
+      <!-- Scroll Text Overlays -->
+      <div class="text-overlays-container">
+        <!-- Step 1: Left Aligned -->
+        <div class="overlay-step left-aligned" data-start-frame="1" data-end-frame="8">
+          <span class="step-label">01 / Aesthetics</span>
+          <h2 class="step-title">Fluid Motion Design</h2>
+          <p class="step-desc">Designed with ergonomic contours and smooth rotation mechanics, our structure blends into
+            your daily workflow with subtle refinement.</p>
+        </div>
+
+        <!-- Step 2: Right Aligned -->
+        <div class="overlay-step right-aligned" data-start-frame="10" data-end-frame="17">
+          <span class="step-label">02 / Engineering</span>
+          <h2 class="step-title">Rotational Precision</h2>
+          <p class="step-desc">Utilizing a dual-pivot axis, every rotation is frictionless and stable, providing tactile
+            feedback calibrated to your touch.</p>
+        </div>
+
+        <!-- Step 3: Left Aligned -->
+        <div class="overlay-step left-aligned" data-start-frame="19" data-end-frame="25">
+          <span class="step-label">03 / Connectivity</span>
+          <h2 class="step-title">Seamless Integration</h2>
+          <p class="step-desc">Equipped with ultra-responsive sensors that map physical dynamics to software systems,
+            delivering sub-millisecond tactile synchronization.</p>
+        </div>
+
+        <!-- Step 4: Center Aligned -->
+        <div class="overlay-step center-aligned" data-start-frame="27" data-end-frame="32">
+          <span class="step-label">04 / Performance</span>
+          <h2 class="step-title">Endless Possibility</h2>
+          <p class="step-desc">Crafted from premium aluminum composites to deliver light weight without compromising
+            structural integrity. Built to perform, designed to stun.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Features Grid -->
+  <section id="features" class="features">
+    <div class="section-header">
+      <span class="section-label">Performance Specifications</span>
+      <h2 class="section-title">Engineered to Perfection</h2>
+    </div>
+
+    <div class="grid-container">
+      <!-- Feature Card 1 -->
+      <div class="feature-card">
+        <div class="card-icon">
+          <i data-lucide="rotate-3d"></i>
+        </div>
+        <h3 class="card-title">3D Motion Capture</h3>
+        <p class="card-desc">Advanced spatial mapping tracks orientation changes instantly, translating physical
+          movements into fluid actions.</p>
+      </div>
+
+      <!-- Feature Card 2 -->
+      <div class="feature-card">
+        <div class="card-icon">
+          <i data-lucide="zap"></i>
+        </div>
+        <h3 class="card-title">Sub-1ms Latency</h3>
+        <p class="card-desc">Custom high-frequency wireless protocols guarantee speed, making input delays completely
+          imperceptible.</p>
+      </div>
+
+      <!-- Feature Card 3 -->
+      <div class="feature-card">
+        <div class="card-icon">
+          <i data-lucide="cpu"></i>
+        </div>
+        <h3 class="card-title">Intelligent Adaptive Core</h3>
+        <p class="card-desc">Onboard smart processors analyze user interaction habits, adjusting dampening torque to
+          match operational styles.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section id="cta" class="cta-section">
+    <div class="cta-box">
+      <h2 class="cta-title">Bring Motion to Life</h2>
+      <p class="cta-desc">Join the next evolution of desktop controls. Reserve your AERO unit today and redefine your
+        physical interaction.</p>
+      <a href="#" class="cta-btn">Pre-Order Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-info">
+        <a href="#" class="footer-logo">
+          <div class="logo-dot"></div>
+          AERO
+        </a>
+        <p class="footer-desc">Redefining physical-digital synergy through beautiful, interactive industrial
+          engineering.</p>
+      </div>
+      <div class="footer-links-group">
+        <div class="footer-col">
+          <span class="footer-col-title">Product</span>
+          <a href="#">Overview</a>
+          <a href="#">Design</a>
+          <a href="#">Specs</a>
+          <a href="#">Pre-order</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Company</span>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Press Kit</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Support</span>
+          <a href="#">Help Center</a>
+          <a href="#">Contact Support</a>
+          <a href="#">Warranty</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AERO Systems Inc. All rights reserved.</p>
+      <div style="display: flex; gap: 20px;">
+        <a href="#" style="color: inherit; text-decoration: none;">Privacy Policy</a>
+        <a href="#" style="color: inherit; text-decoration: none;">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    // Initialize icons
+    lucide.createIcons();
+
+    // Configuration and Initialization
+    const frameCount = 33;
+    const images = [];
+    let loadedImagesCount = 0;
+
+    // Image sequence URL generator
+    const currentFrameIndex = index => `./ezgif-2d5dd0241f431bc7-jpg/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`;
+
+    // Animation & Smooth Scroll (Lerp) Variables
+    const smoothScroll = {
+      currentFrame: 0,
+      targetFrame: 0,
+      lerpFactor: 0.085 // Controls the smoothness inertia (lower = smoother/slower)
+    };
+
+    const canvas = document.getElementById('animation-canvas');
+    const context = canvas.getContext('2d');
+    const scrollContainer = document.getElementById('animation-section');
+    const steps = document.querySelectorAll('.overlay-step');
+
+    // Preload image sequence
+    function preloadImages() {
+      for (let i = 1; i <= frameCount; i++) {
+        const img = new Image();
+        img.onload = () => {
+          loadedImagesCount++;
+          const progress = Math.round((loadedImagesCount / frameCount) * 100);
+          document.querySelector('.loader-percentage').textContent = `${progress}%`;
+
+          if (loadedImagesCount === frameCount) {
+            // Dismiss loader
+            setTimeout(() => {
+              const preloader = document.getElementById('preloader');
+              preloader.classList.add('fade-out');
+
+              // Initialize canvas dimensions and paint frame 0
+              resizeCanvas();
+              // Start requestAnimationFrame loop
+              requestAnimationFrame(renderLoop);
+            }, 300); // Tiny pause for aesthetic reveal
+          }
+        };
+        img.onerror = () => {
+          // Graceful handling of image errors to prevent getting stuck
+          loadedImagesCount++;
+          if (loadedImagesCount === frameCount) {
+            const preloader = document.getElementById('preloader');
+            preloader.classList.add('fade-out');
+            resizeCanvas();
+            requestAnimationFrame(renderLoop);
+          }
+        };
+        img.src = currentFrameIndex(i);
+        images.push(img);
+      }
+    }
+
+    // Adapt canvas size to screen DPI (Retina support)
+    function resizeCanvas() {
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      // Normalizing standard layout sizes in context
+      context.scale(dpr, dpr);
+
+      // Forces instant redraw on screen resize
+      drawFrame(Math.round(smoothScroll.currentFrame));
+    }
+
+    // Paint a frame to canvas with aspect-ratio "contain"
+    function drawFrame(index) {
+      const img = images[index];
+      if (!img || !img.complete) return;
+
+      context.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+      const canvasWidth = window.innerWidth;
+      const canvasHeight = window.innerHeight;
+      const imgWidth = img.naturalWidth;
+      const imgHeight = img.naturalHeight;
+
+      // Fit the image in the screen (contain logic)
+      const scale = Math.min(canvasWidth / imgWidth, canvasHeight / imgHeight);
+
+      // Calculate coordinates to keep it perfectly centered
+      const x = (canvasWidth - imgWidth * scale) / 2;
+      const y = (canvasHeight - imgHeight * scale) / 2;
+
+      context.drawImage(img, x, y, imgWidth * scale, imgHeight * scale);
+    }
+
+    // Track scroll positions and set target frame index
+    function updateScrollProgress() {
+      const rect = scrollContainer.getBoundingClientRect();
+      const scrollDistance = scrollContainer.scrollHeight - window.innerHeight;
+      const scrolledAmount = -rect.top;
+
+      // Percentage of scroll in this container (clamped 0 to 1)
+      let progress = scrolledAmount / scrollDistance;
+      progress = Math.max(0, Math.min(1, progress));
+
+      // Calculate target frame
+      smoothScroll.targetFrame = progress * (frameCount - 1);
+    }
+
+    // Toggle active text cards according to frame index milestones
+    function updateTextOverlays(frameIndex) {
+      steps.forEach(step => {
+        const start = parseFloat(step.getAttribute('data-start-frame'));
+        const end = parseFloat(step.getAttribute('data-end-frame'));
+
+        if (frameIndex >= start && frameIndex <= end) {
+          step.classList.add('active');
+        } else {
+          step.classList.remove('active');
+        }
+      });
+    }
+
+    // Request Animation Frame loop for smooth interpolation
+    function renderLoop() {
+      // Lerp logic: current = current + (target - current) * factor
+      const diff = smoothScroll.targetFrame - smoothScroll.currentFrame;
+
+      // Small epsilon to complete animation and stop rendering changes
+      if (Math.abs(diff) > 0.001) {
+        smoothScroll.currentFrame += diff * smoothScroll.lerpFactor;
+        drawFrame(Math.round(smoothScroll.currentFrame));
+        updateTextOverlays(smoothScroll.currentFrame);
+      }
+
+      requestAnimationFrame(renderLoop);
+    }
+
+    // Mouse movement interactive card lighting (Vercel-like hover glow)
+    const cards = document.querySelectorAll('.feature-card');
+    cards.forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--x', `${x}px`);
+        card.style.setProperty('--y', `${y}px`);
+      });
+    });
+
+    // Event Listeners
+    window.addEventListener('scroll', updateScrollProgress);
+    window.addEventListener('resize', resizeCanvas);
+
+    // Run Preloading
+    preloadImages();
+  </script>
+</body>
+
+</html>
